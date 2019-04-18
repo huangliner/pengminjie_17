@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var sb='48294746';
+			sb=sb.split('')
+			alert(sb.sort(function  (a,b) {
+				return b-a;
+			})[0]);
+			
+			var countryList=["America","Greece","Britain","Canada","China","Egypt"];
+			var c=/a/ig;
+			var d=countryList.join('').match(c).length;
+			alert(d);
+		</script>
+	</body>
+</html>
