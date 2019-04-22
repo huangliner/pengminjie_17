@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var sb = [2,5,'3','a',[1],3];
+			var usb = 0;
+        	var get = sb.flat();
+        		function sum(value,index,arr){
+           		 if(arr[index].constructor==Number){
+             	   usb+=value;
+          			}
+       			}
+            	get.forEach(sum);
+            	console.log(usb);
+		</script>
+	</body>
+</html>
