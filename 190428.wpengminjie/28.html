@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//求任意一组数的和
+			function sui() {
+				var nb = 0;
+				for (var a = 0; a<arguments.length; a++) {
+					nb += arguments[a];
+				}
+				console.log(nb);				
+			}
+			console.log(sui.call(null, 6, 7)); 
+			console.log(sui.apply(null, [8, 9]));
+			
+			//求[1,4,2,6,8,0]这个数组的最大值。
+			var zu=[1,4,2,6,8,0];
+			Math.max.apply(Math,zu)
+		</script>
+	</body>
+</html>
